@@ -1,0 +1,13 @@
+wolf3d+touch (1.6-5-harmattan2015belle) unstable; urgency=low
+
+  * Fixed move-left and move-right mouse motion event.
+
+ -- Karin Zhao <beyondk2000@gmail.com>  The, 14 Jul 2015 21:18:06 +0800
+
+wolf3d+touch (1.6-5-harmattan2015angeline) unstable; urgency=low
+
+  * Support Multi-Touch.
+  * Include data packages, to /usr/share/wolf3d
+  * Other changes.
+
+ -- Karin Zhao <beyondk2000@gmail.com>  Sun, 12 Jul 2015 09:36:06 +0800

@@ -1,0 +1,110 @@
+dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): 
+dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): 
+dpkg-buildpackage: source package wolf3d
+dpkg-buildpackage: source version 1.6-5
+dpkg-buildpackage: source changed by CepiPerez <cepiperez@gmail.com>
+dpkg-buildpackage: host architecture armel
+dh_testdir
+dh_testroot
+rm -f build-stamp configure-stamp
+# Add here commands to clean up after the build process.
+make clean
+make[1]: Entering directory `/home/user/developer/wolf3d-1.6'
+===> CLEAN
+make[1]: Leaving directory `/home/user/developer/wolf3d-1.6'
+dh_clean 
+dh_testdir
+# Add here commands to configure the package.
+touch configure-stamp
+dh_testdir
+# Add here commands to compile the package.
+make
+make[1]: Entering directory `/home/user/developer/wolf3d-1.6'
+===> DEP wl_text.cpp
+===> DEP wl_state.cpp
+===> DEP wl_play.cpp
+===> DEP wl_parallax.cpp
+===> DEP wl_menu.cpp
+===> DEP wl_main.cpp
+===> DEP wl_inter.cpp
+===> DEP wl_game.cpp
+===> DEP wl_floorceiling.cpp
+===> DEP wl_draw.cpp
+===> DEP wl_debug.cpp
+===> DEP wl_cloudsky.cpp
+===> DEP wl_atmos.cpp
+===> DEP wl_agent.cpp
+===> DEP wl_act2.cpp
+===> DEP wl_act1.cpp
+===> DEP signon.cpp
+===> DEP id_vl.cpp
+===> DEP id_vh.cpp
+===> DEP id_us_1.cpp
+===> DEP id_sd.cpp
+===> DEP id_pm.cpp
+===> DEP id_in.cpp
+===> DEP id_ca.cpp
+===> DEP fmopl.cpp
+make[1]: Leaving directory `/home/user/developer/wolf3d-1.6'
+make[1]: Entering directory `/home/user/developer/wolf3d-1.6'
+===> CXX fmopl.cpp
+===> CXX id_ca.cpp
+===> CXX id_in.cpp
+===> CXX id_pm.cpp
+===> CXX id_sd.cpp
+===> CXX id_us_1.cpp
+===> CXX id_vh.cpp
+===> CXX id_vl.cpp
+===> CXX signon.cpp
+===> CXX wl_act1.cpp
+===> CXX wl_act2.cpp
+===> CXX wl_agent.cpp
+===> CXX wl_atmos.cpp
+===> CXX wl_cloudsky.cpp
+===> CXX wl_debug.cpp
+===> CXX wl_draw.cpp
+===> CXX wl_floorceiling.cpp
+===> CXX wl_game.cpp
+===> CXX wl_inter.cpp
+===> CXX wl_main.cpp
+===> CXX wl_menu.cpp
+===> CXX wl_parallax.cpp
+===> CXX wl_play.cpp
+===> CXX wl_state.cpp
+===> CXX wl_text.cpp
+===> LD wolf3d
+make[1]: Leaving directory `/home/user/developer/wolf3d-1.6'
+#docbook-to-man debian/wolf3d.sgml > wolf3d.1
+touch build-stamp
+dh_testdir
+dh_testroot
+dh_clean -k 
+dh_installdirs
+# Add here commands to install the package into debian/wolf3d.
+cp /home/user/developer/wolf3d-1.6/wolf3d.sh /home/user/developer/wolf3d-1.6/debian/wolf3d/usr/bin/wolf3d
+cp /home/user/developer/wolf3d-1.6/wolf3d.desktop /home/user/developer/wolf3d-1.6/debian/wolf3d/usr/share/applications/hildon/wolf3d.desktop
+cp /home/user/developer/wolf3d-1.6/wolf3d-48.png /home/user/developer/wolf3d-1.6/debian/wolf3d/usr/share/icons/hicolor/48x48/hildon/wolf3d.png
+cp /home/user/developer/wolf3d-1.6/wolf3d-64.png /home/user/developer/wolf3d-1.6/debian/wolf3d/usr/share/icons/hicolor/64x64/hildon/wolf3d.png
+cp /home/user/developer/wolf3d-1.6/wolf3d /home/user/developer/wolf3d-1.6/debian/wolf3d/opt/wolf3d/wolf3d
+cp /home/user/developer/wolf3d-1.6/keyon /home/user/developer/wolf3d-1.6/debian/wolf3d/opt/wolf3d/keyon
+cp /home/user/developer/wolf3d-1.6/keyoff /home/user/developer/wolf3d-1.6/debian/wolf3d/opt/wolf3d/keyoff
+dh_testdir
+dh_testroot
+dh_installchangelogs 
+dh_installexamples
+dh_installman
+dh_link
+dh_strip
+dh_compress
+dh_fixperms
+dh_installdeb
+dh_shlibdeps
+dh_gencontrol
+dh_md5sums
+dh_builddeb
+dpkg-deb：正在新建软件包 wolf3d，包文件为 ../wolf3d_1.6-5_armel.deb。
+
+dpkg-buildpackage: binary only upload (no source included)

@@ -1,0 +1,13 @@
+<aegis>
+   <request>
+      <credential match="*" />
+    <deny>
+              <credential match="UID::*" />
+              <credential match="GID::*" />
+    </deny>
+      <for path="/usr/bin/wolf3d+touch" />
+      <for path="/usr/bin/wolf3d+touch.sh" />
+      <for path="/usr/share/wolf3d+touch/keyon" />
+      <for path="/usr/share/wolf3d+touch/keyoff" />
+   </request>
+</aegis>

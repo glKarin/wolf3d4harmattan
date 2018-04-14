@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+#Version=1.19
+Type=Application
+Name=Wolfenstein 3D
+Exec=/usr/bin/wolf3d+touch.sh
+Icon=/usr/share/icons/hicolor/80x80/apps/wolf3d+touch.png
+X-Osso-Type=application/x-executable
+Categories=Game;ActionGame;
